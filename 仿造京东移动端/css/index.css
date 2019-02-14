@@ -1,0 +1,212 @@
+/* 公共样式 */
+html{ font-size: 100px;}
+body{
+	/*为什么这里不能用rem，因为这是body的宽度，如果用rem那就一直都是1，没有办法缩小*/
+	min-width: 320px;
+	max-width: 640px;
+	
+	font-size: 16px;
+	margin: auto;
+}
+.content{ width: 6.4rem; margin: auto;}
+
+/* header头部 */
+header.header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin: auto;
+	z-index: 99999;
+	height: 0.5rem;
+	width: 6.4rem;
+	padding: 0.05rem 0;
+}
+
+header.header .search input{
+	margin: 0.05rem 0;
+	width: 5.3rem;
+	height: 0.3rem;
+	font-size:0.16rem;
+	text-indent: 0.7rem;
+	outline: none;
+	border-radius: 0.2rem;
+	background:url("../img/header/jd.png")no-repeat 0.1rem center/auto 60%,#fff url("../img/header/search.png")no-repeat 0.4rem center/auto 60%;
+	/*注意：多背景，颜色要放在最后一个背景里面*/
+}
+header.header .content{position: relative;}
+header.header .content .user a{
+	position: absolute;
+	top: calc(50% - 0.12rem);
+	right: 0.1rem;
+	color: #fff;
+	font-size: 0.16rem;
+}
+
+/*swiper轮播图*/
+.swiper-container,
+.swiper-container img{ width: 6.4rem;}
+
+/*swiper2轮播图*/
+#swiper2>.swiper-wrapper ul{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-content:space-around;
+	height: 3rem;
+}
+#swiper2>.swiper-wrapper ul li{
+	width: 1.1rem;
+	text-align: center;
+	font: 0.16rem/0.4rem "";
+}
+#swiper2>.swiper-wrapper ul li a img{
+	width: 0.5rem;
+}
+
+/* part1 */
+.mian .part1 .content>a img{ width: 100%;}
+
+/* part2 */
+.mian .part2>.content>header{
+	background: url("../img/part2/shoppinr_bg.png")no-repeat center;
+	text-align: center;
+	height: 0.66rem;
+}
+.mian .part2>.content>header>img{ width: 1.33rem;}
+
+.mian .part2>.content .shopping ul{ 
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	width: 100%;	
+}
+.mian .part2 .content .shopping ul:nth-child(1){
+	margin-top: 0.5rem;
+	height: 3rem;}
+.mian .part2 .content .shopping ul:nth-child(2){
+	flex-wrap:nowrap;
+	justify-content: space-between;
+}
+.mian .part2 .content .shopping ul li{
+	width: 2.5rem;
+	padding: 0.1rem;
+	border-radius: 0.2rem;
+	box-shadow:0 0 10px #000;
+}
+.mian .part2 .content .shopping ul:nth-child(2) li{width: 1.2rem;}
+.mian .part2 .content .shopping ul li a{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.mian .part2 .content .shopping ul:nth-child(2) li a{display:block;}
+.mian .part2>.content .shopping ul li .text{
+	height: 0.7rem;
+	font: bold 0.2rem/0.4rem "";
+	color: #000;
+	text-align: center;
+}
+.mian .part2>.content .shopping ul:nth-child(2) li .text{
+	margin-bottom: 0.3rem;
+}
+.mian .part2>.content .shopping ul li .text span{
+	color: #999;
+	font-size: 0.16rem;
+}
+.mian .part2>.content .shopping ul li img{
+	width: 1rem;
+	height: 1rem;
+}
+
+/* part3 */
+.mian .part3>.content .swiper{margin: 0.2rem 0;}
+
+.mian .part3>.content>header{
+	background: url("../img/part2/shoppinr_bg.png")no-repeat center;
+	text-align: center;
+	height: 0.66rem;
+}
+.mian .part3>.content>header>img{ width: 1.82rem;}
+
+.mian .part3>.content .shopping ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.mian .part3>.content .shopping ul li{
+	width: 2.76rem;
+}
+.mian .part3>.content .shopping ul li .text{
+	width: 100%;
+	height: 1.5rem;
+	position:relative;
+	font: bold 0.14rem/0.3rem "";
+}
+.mian .part3>.content .shopping ul li .text p:nth-child(2){
+	color: red;
+}
+.mian .part3>.content .shopping ul li .text p:nth-child(3){
+	color: #ccc;
+	font: 0.1rem/0.3rem "";
+}
+.mian .part3>.content .shopping ul li .text span{
+	position: absolute;
+	bottom: 0.1rem;
+	right:0;
+	margin:auto;
+	color: #999;
+	padding: 0.05rem;
+	border: 0.01rem solid #ccc;
+}
+
+/* footer */
+footer{padding-bottom: 0.5rem;}
+footer ul li{
+	border-top: 0.01rem solid #eee;
+	text-align: center;
+	font: 0.14rem/0.2rem "";
+	padding: 0.1rem 0;
+}
+footer ul li:nth-child(2) a{
+	padding: 0 0.3rem;
+	border-right: 0.01rem solid #aaa;
+}
+footer ul li:nth-child(2) a:nth-child(4){border-right:none;}
+footer ul li:nth-child(3) a{
+	display: inline-block;
+	margin-right: 0.5rem;
+	text-align: center;}
+footer ul li:nth-child(3) a i{
+	display:block;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+footer ul li:nth-child(3) a:nth-child(1) i{
+	background: url("../img/footer/jd-sprites.png")no-repeat -1.15rem -0.7rem/2rem 2rem;
+}
+footer ul li:nth-child(3) a:nth-child(2) i{
+	background: url("../img/footer/jd-sprites.png")no-repeat -0.35rem -0.7rem/2rem 2rem;
+}
+footer ul li:nth-child(3) a:nth-child(3) i{
+	background: url("../img/footer/jd-sprites.png")no-repeat -0.75rem -0.7rem/2rem 2rem;
+}
+
+/* nav */
+nav{
+	height: 0.5rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 999;
+	background: #fff;
+}
+nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+nav>ul li img{height: 0.5rem;}
+
